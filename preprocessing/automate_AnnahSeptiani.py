@@ -36,5 +36,16 @@ def pipeline_preprocessing(input_path, output_path):
     return X_train_scaled, X_test_scaled, y_train, y_test
 
 if __name__ == "__main__":
-    # Menjalankan fungsi otomatisasi secara lokal
-    pipeline_preprocessing('../heart.csv', 'heart_preprocessed.csv')
+    import os
+    
+    # Mendeteksi lokasi folder tempat script ini berada (folder 'preprocessing')
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    # Menyusun jalur absolut ke file heart.csv (keluar ke root folder, lalu cari heart.csv)
+    INPUT_PATH = os.path.join(BASE_DIR, '..', 'heart.csv')
+    
+    # Menyusun jalur hasil akhir di dalam folder 'preprocessing'
+    OUTPUT_PATH = os.path.join(BASE_DIR, 'heart_preprocessed.csv')
+    
+    # Menjalankan fungsi dengan jalur absolut yang aman
+    pipeline_preprocessing(INPUT_PATH, OUTPUT_PATH)

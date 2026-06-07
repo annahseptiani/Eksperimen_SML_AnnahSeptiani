@@ -3,9 +3,9 @@
 ## 📋 1. Informasi dan Dokumentasi Dataset
 Proyek ini menggunakan dataset klinis untuk memprediksi risiko penyakit jantung pada pasien.
 
-* **Sumber Dataset:** [UCI Heart Disease Dataset / Kaggle Heart Disease Link](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) *(Silakan ganti tautan ini dengan link asli tempat Anda mendownload file heart.csv)*
+* **Sumber Dataset:** [UCI Heart Disease Dataset / Kaggle Heart Disease Link](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) 
 * **Deskripsi Dataset:** Dataset ini terdiri dari fitur-fitur medis pasien seperti usia, jenis kelamin, tipe nyeri dada, tekanan darah, kolesterol, hingga hasil elektrokardiografi.
-* **Jumlah Data:** Mengandung 303 baris data *(sesuaikan dengan jumlah baris di heart.csv Anda)* dengan 14 kolom atribut.
+* **Jumlah Data:** Mengandung 303 baris data 
 * **Variabel Target:** Kolom `target` (0 = Sehat/Risiko Rendah, 1 = Sakit/Risiko Tinggi).
 
 ## ⚙️ 2. Struktur Berkas Preprocessing Data
